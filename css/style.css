@@ -71,6 +71,7 @@ body {
 
 .seat:nth-of-type(4) {
     margin-right: 18px;
+    
 }
 
 .seat:nth-last-of-type(5) {
