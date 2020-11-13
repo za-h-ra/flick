@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap');
+
 :root {
     --primary-seat-color: #444451;
     --primary-text-color: #fff;
+    --secondary-text-color: #605F6F;
     --secondary-color: #3347FF;
     --background-color-1: #211940;
     --background-color-2: #060106;
     --selected-seat-color: #FA40DC;
     --occupied-seat-color: #9048FF;
+    --showcase-background: #171B3F;
 }
 
 
@@ -52,6 +56,35 @@ body {
 	-webkit-appearance: none;
 }
 
+.container {
+    perspective: 1000px;
+    margin: 20px;
+}
+
+.showcase {
+    background: var(--showcase-background);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: var(--secondary-text-color);
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.showcase li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.showcase li small {
+    margin-left: 5px;
+}
+
+
+
 .seat {
     background-color: var(--primary-seat-color);
     height: 12px;
@@ -71,17 +104,41 @@ body {
 
 .seat:nth-of-type(4) {
     margin-right: 18px;
-    
 }
 
 .seat:nth-last-of-type(5) {
     margin-right: 18px;
-    
+}
+
+.seat:not(.occupied):hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.showcase .seat:not(.occupied):hover {
+    cursor: default;
+    transform: scale(1);
 }
 
 .row {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.screen-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.screen {
+    background-color: white;
+    height: 70px;
+    width: 60%;
+    transform: rotateX(-20deg);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
 
 }
+
