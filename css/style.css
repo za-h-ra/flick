@@ -37,7 +37,23 @@ body {
 }
 
 .movie-container {
-	margin: 20px 0;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie-img img {
+    margin: 10px;
+}
+
+.primary-heading {
+    margin: 20px;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
 .movie-container select {
