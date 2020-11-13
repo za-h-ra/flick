@@ -108,6 +108,7 @@ body {
 
 .seat:nth-last-of-type(5) {
     margin-right: 18px;
+    
 }
 
 .seat:not(.occupied):hover {
@@ -126,6 +127,7 @@ body {
     justify-content: center;
 }
 
+
 .screen-container {
     display: flex;
     justify-content: center;
@@ -142,3 +144,10 @@ body {
 
 }
 
+p.movie-text {
+    margin: 5px 0;
+}
+
+p.movie-text span {
+    color: var(--selected-seat-color);
+}
