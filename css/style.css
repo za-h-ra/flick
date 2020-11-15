@@ -72,6 +72,20 @@ body {
 	-webkit-appearance: none;
 }
 
+
+select {
+    background-image: url('../assets/bxs-down-arrow-alt.svg');
+    background-repeat: no-repeat;
+    background-position: 95% center;
+    background-size: 20px;
+    outline: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+
 .container {
     perspective: 1000px;
     margin: 20px;
