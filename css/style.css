@@ -69,7 +69,7 @@ body {
 	padding: 15px;
 	appearance: none;
 	-moz-appearance: none;
-	-webkit-appearance: none;
+    -webkit-appearance: none;
 }
 
 
@@ -84,6 +84,8 @@ select {
 select::-ms-expand {
     display: none;
 }
+
+
 
 
 .container {
