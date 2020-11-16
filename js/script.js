@@ -6,8 +6,18 @@ const movieSelect = document.getElementById('movie')
 
 const ticketPrice = Number(movieSelect.value)
 
+function updateSelectedCount() {
+    const selectedSeats = document.querySelectorAll()
+}
+
+
+
 
 
 container.addEventListener('click', (e) => {
-    console.log(e.target)
+    if (e.target.classList.contains('seat') && !e.target.classList.contains('occupied')) {
+        e.target.classList.toggle('selected')
+
+        updatedSelectedCount()
+    }
 })
