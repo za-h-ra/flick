@@ -190,12 +190,12 @@ p.movie-text span {
 	.screen {
 		height: 70px;
 		width: 50%;
-    }
-    
-    .seat {
-        height: 12px;
-        width: 15px;
-    }
+	}
+
+	.seat {
+		height: 12px;
+		width: 15px;
+	}
 
 	.seat:nth-of-type(4) {
 		margin-right: 3px;
